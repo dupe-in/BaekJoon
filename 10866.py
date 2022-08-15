@@ -8,7 +8,7 @@ import sys
 def deque_program(N):
     de = collections.deque([])
     for _ in range(N):
-        arr = list(map(str, sys.stdin.readline().rstrip().split()))
+        arr = list(map(str, sys.stdin.readline().split()))
         if arr[0] == "push_front":
             de.appendleft(arr[1])
         elif arr[0] == "push_back":
